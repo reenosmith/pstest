@@ -13,4 +13,4 @@ $wc.DownloadFile($url1, $filelocation1)
 
 Write-Output "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"
 
-Rename-Item -Path "C:\Temp\mxb-windows-x86_x64.exe" -NewName "C:\$rename"
+Rename-Item -Path "C:\Temp\mxb-windows-x86_x64.exe" -NewName "C:\Temp\$rename"
