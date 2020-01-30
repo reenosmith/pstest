@@ -8,6 +8,7 @@ $rename = "swibm#823367cd-e5a1-4cef-86f1-473efc86dfa0#5038#.exe"
 
 Set-ExecutionPolicy Bypass
 
+[System.Net.ServicePointManager]::ServerCertificateValidationCallback = {$true}
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $wc.DownloadFile($url1, $filelocation1)
 
